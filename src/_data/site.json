@@ -1,11 +1,11 @@
 {
-    "showThemeCredit": false,
-    "name": "insIDE Club",
-    "shortDesc": "This is my alternate blog. For the meantime it is being used for insIDE club activity.",
-    "url": "www2.nadon.io",
-    "authorEmail": "phil@nadon.io",
-    "authorHandle": "@PhilNadon",
-    "authorName": "Phil Nadon",
-    "enableThirdPartyComments": false,
-    "maxPostsPerPage": 8
+  "showThemeCredit": false,
+  "name": "insIDE Club",
+  "shortDesc": "This is my alternate blog. For the meantime it is being used for insIDE club activity.",
+  "url": "inside-club.nadon.io",
+  "authorEmail": "phil@nadon.io",
+  "authorHandle": "@PhilNadon",
+  "authorName": "Phil Nadon",
+  "enableThirdPartyComments": false,
+  "maxPostsPerPage": 8
 }
