@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: Web Crawler with Python
-date: 2019-06-23T04:48:40.251Z
+date: 2019-06-21T04:49:00.000Z
 ---
 ## Introduction
 This tutorial will show to make a web crawler using simple [Python](https://www.python.org) and built-in packages.
