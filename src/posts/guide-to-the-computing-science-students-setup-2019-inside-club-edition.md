@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
 title: 'Guide to the Computing Science Student''s Setup, 2019 insIDE club edition.'
-date: 2019-06-21T04:48:02.613Z
+date: 2019-06-21T04:47:00.000Z
 ---
 ## Introduction
 This guide will cover how to install the majority of tools you will be using
