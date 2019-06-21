@@ -4,10 +4,10 @@ title: Web Crawler with Python
 date: 2019-06-21T04:48:40.251Z
 ---
 ## Introduction
-This tutorial will show to make a web crawler using simple Python and built-in packages.
+This tutorial will show to make a web crawler using simple [Python](https://www.python.org) and built-in packages.
 
 ## Prerequisites
-You must have gone through the setup tutorial, or at least have python installed along with a basic text editor.
+You must have gone through the setup tutorial, or at least have *Python* installed along with a basic text editor.
 
 ## Reddit's JSON api
 ### visualizing the JSON
@@ -15,22 +15,22 @@ The first thing to do is obtain a list of posts from our favorite subreddit.
 For this tutorial I have chosen **r/Eyebleach**, which I occasionally visit for pictures
 of cats and other soul-cleansing content. 
 
-Luckily for us, Reddit offers a [JSON](https://www.json.org/) [api](https://en.wikipedia.org/wiki/Application_programming_interface), which gives developers like us easy access to content.
+Luckily for us, [Reddit](https://www.reddit.com) offers a [JSON](https://www.json.org/) [api](https://en.wikipedia.org/wiki/Application_programming_interface), which gives developers like us easy access to content.
 
 For example, if you visit [https://www.reddit.com/r/Eyebleach/new.json?sort=new](https://www.reddit.com/r/Eyebleach/new.json?sort=new), you will see a wall of text appear. While it looks like a mess
 right now, [VSCode](https://code.visualstudio.com/) has a neat trick which lets
 us automatically format a document and make it more readable. Copy and paste the
-wall of text into VSCode, and then press `ctrl` + `shift` + `p` for Windows, or 
-`command` + `shift` `p` for MacOS, to bring up the command palette. Use this
+wall of text into *VSCode*, and then press `ctrl` + `shift` + `p` for **Windows**, or 
+`command` + `shift` `p` for **MacOS**, to bring up the command palette. Use this
 palette to search for the `Format Document` command, and press enter. You should
 see the wall of text organize itself into a hierarchical structure. 
-This is JSON.
+This is *JSON*.
 
 Familiarize yourself with the content, and notice the sort of information this
 gives you.
 
 ### Using Python to obtain the JSON object
-We can obtain this information and turn it into a format that Python can use, by
+We can obtain this information and turn it into a format that *Python* can use, by
 using the following code:
 
 ```python
@@ -41,20 +41,20 @@ with requests.get(url, headers = {'User-agent': 'phils bot heh'}) as req:
     data = req.json()
 ```
 
-The first line simply assigns the JSON's url to the variable `url`, so we can use
+The first line simply assigns the *JSON's* url to the variable `url`, so we can use
 it elsewhere. In the second line, we see that we make a request, with the first
 parameter being `url` (the url), and the second being `headers`, which basically
-tells reddit who is accessing the JSON (otherwise we get the default one, which
+tells *Reddit* who is accessing the *JSON* (otherwise we get the default one, which
 will almost always gives us an error since its overused). Notice the `as req`, 
-that simply tells Python that we're calling this request `req` from now on.
+that simply tells *Python* that we're calling this request `req` from now on.
 
 Lastly, we assign the variable `data` the value of `req.json()`, which basically
-converts the JSON to a Python Dictionary (similar, but something Python can use).
+converts the *JSON* to a *Python Dictionary* (similar, but something *Python* can use).
 
 ## Post information in JSON
 ### JSON Structure
-Now we need to obtain all the posts in the JSON response. If we look at the structure
-of the JSON object, we see that it looks something like the following:
+Now we need to obtain all the posts in the *JSON* response. If we look at the structure
+of the *JSON* object, we see that it looks something like the following:
 ```python
 {
     "kind": "Listing",
@@ -73,9 +73,9 @@ and `"data"` is inside of the surrounding braces. Thus, the hierarchy is as foll
 `"json" -> "data" -> "children" -> post`.
 
 ### Obtaining posts from JSON
-Remember that the JSON object was converted to a Python Dictionary, which we can
+Remember that the *JSON* object was converted to a *Python Dictionary*, which we can
 for the most part assume is the same thing. From now on we will refer to the
-converted JSON object as the data.
+converted *JSON* object as the data.
 
 To access the list of posts from the dictionary, we can assign a variable to
 `"children"` in the data, which holds the posts, and then iterate through them:
@@ -93,7 +93,7 @@ with requests.get(url, headers = {'User-agent': 'phils bot heh'}) as req:
 ```
 
 This means we will do something to each post inside of `posts`, which is equal to
-the "children" key inside of the JSON object
+the "children" key inside of the *JSON* object
 
 ## Obtaining the image
 ### Make sure its a JPG
@@ -177,7 +177,7 @@ creates the folder if it doesnt exist.
 Finally, we can download the image, by using `urllib.request.urlretrieve` and passing
 the url to get the image from, and the file to save it to as parameters. After
 doing this, we should wait a second before downloading another; if we download
-too many at once, Reddit will get mad at us! Here is the full code:
+too many at once, *Reddit* will get mad at us! Here is the full code:
 
 ```python
 import urllib.request, json, time, requests, os
@@ -221,7 +221,7 @@ download images from the subreddit *Programmerhumor* sorted by the top-ranking p
 into the folder *programmer_memes*. Good luck! 
 
 ## About Dictionaries
-Python dictionaries are structured in "key": "value" pairs. For example, if I had
+*Python* *Dictionaries* are structured in "key": "value" pairs. For example, if I had
 ```python
 data = {
     "key": "apple"
