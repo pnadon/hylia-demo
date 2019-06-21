@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: 'Hylia, a tool for easily generating and deploying a static website'
 metaTitle: hylia-tutorial
-date: 2019-06-21T04:42:21.601Z
+date: 2019-06-21T04:48:00.000Z
 tags:
   - inside
   - website
