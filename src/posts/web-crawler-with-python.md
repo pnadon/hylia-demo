@@ -12,8 +12,7 @@ You must have gone through the setup tutorial, or at least have *Python* install
 ## Reddit's JSON api
 ### visualizing the JSON
 The first thing to do is obtain a list of posts from our favorite subreddit.
-For this tutorial I have chosen **r/Eyebleach**, which I occasionally visit for pictures
-of cats and other soul-cleansing content. 
+For this tutorial I have chosen [r/Eyebleach](https://www.reddit.com/r/Eyebleach/), which I occasionally visit for pictures of cats and other soul-cleansing content. If you're more into memes, feel free to use [r/ProgrammerHumor](https://www.reddit.com/r/ProgrammerHumor/)
 
 Luckily for us, [Reddit](https://www.reddit.com) offers a [JSON](https://www.json.org/) [api](https://en.wikipedia.org/wiki/Application_programming_interface), which gives developers like us easy access to content.
 
