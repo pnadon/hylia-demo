@@ -1,18 +1,19 @@
 {
-    "items": [{
-            "text": "Home",
-            "url": "/",
-            "external": false
-        },
-        {
-            "text": "Github",
-            "url": "https://github.com/pnadon?tab=repositories",
-            "external": true
-        },
-        {
-            "text": "Main Blog",
-            "url": "https://nadon.io",
-            "external": true
-        }
-    ]
+  "items": [
+    {
+      "text": "Home",
+      "url": "/",
+      "external": false
+    },
+    {
+      "text": "GitHub",
+      "url": "https://github.com/andybelldesign/hylia",
+      "external": true
+    },
+    {
+      "text": "Twitter",
+      "url": "https://twitter.com/andybelldesign",
+      "external": true
+    }
+  ]
 }

@@ -1,11 +1,11 @@
 {
-  "showThemeCredit": false,
-  "name": "insIDE Club",
-  "shortDesc": "This is my alternate blog. For the meantime it is being used for insIDE club activity.",
-  "url": "inside-club.nadon.io",
-  "authorEmail": "phil@nadon.io",
-  "authorHandle": "@PhilNadon",
-  "authorName": "Phil Nadon",
+  "showThemeCredit": true,
+  "name": "Hylia Starter Kit",
+  "shortDesc": "Hylia is a lightweight Eleventy starter kit to help you to create your own blog or personal website.",
+  "url": "https://hylia.website",
+  "authorEmail": "me@andy-bell.design",
+  "authorHandle": "@andybelldesign",
+  "authorName": "Andy Bell",
   "enableThirdPartyComments": false,
-  "maxPostsPerPage": 8
+  "maxPostsPerPage": 5
 }

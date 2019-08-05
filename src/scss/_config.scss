@@ -86,7 +86,8 @@ $stalfos-config: (
   'leading': (
     'items': (
       'tight': '1.2',
-      'mid': '1.5'
+      'mid': '1.5',
+      'loose': '1.7'
     ),
     'output': 'standard',
     'property': 'line-height'
@@ -134,6 +135,15 @@ $stalfos-config: (
     ),
     'output': 'standard',
     'property': 'z-index'
+  ),
+  'ta': (
+    'items': (
+      'right': 'right',
+      'left': 'left',
+      'center': 'center'
+    ),
+    'output': 'responsive',
+    'property': 'text-align'
   ),
   'text': (
     'items': $stalfos-size-scale,
